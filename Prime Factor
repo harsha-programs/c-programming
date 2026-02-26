@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int num, i;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    printf("Prime factors of %d are: ", num);
+
+    // Check for number of 2s
+    while (num % 2 == 0) {
+        printf("2 ");
+        num = num / 2;
+    }
+
+    // Check for odd factors from 3 onwards
+    for (i = 3; i <= num; i = i + 2) {
+        while (num % i == 0) {
+            printf("%d ", i);
+            num = num / i;
+        }
+    }
+
+    return 0;
+}
