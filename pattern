@@ -1,0 +1,34 @@
+#include<stdio.h>
+int main()
+{ 
+    int n , m , i , j;
+
+    printf(" Enter number of rows :");
+    scanf("%d" , &n);
+    printf(" Enter number of columns :");
+    scanf("%d" , &m); 
+    for ( i = 1; i <=n; i++) {
+        if (i%2 != 0)// odd rows
+        {
+     for ( j = 1; j <= i; j++) 
+     { 
+        printf("%d" , j);
+
+    }
+}
+            else // even rows
+
+            {
+                char ch = 'A';
+                    for ( j = 1; j <= i; j++)
+                  {
+                 printf("%c" , ch );
+                 ch++;
+                  }
+            
+        }
+        
+        printf("\n");
+    }
+    }
+
