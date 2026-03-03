@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    float length, width, thickness, volume;
+
+    printf("Enter slab length, width and thickness (in meters): ");
+    scanf("%f %f %f", &length, &width, &thickness);
+
+    volume = length * width * thickness;
+
+    printf("Volume of concrete required = %.2f cubic meters\n", volume);
+
+    return 0;
+}
