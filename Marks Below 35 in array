@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main () {
+    int n , i ;
+    int marks[10];
+printf("enter number of elements:" );
+scanf("%d" , &n);
+printf(" enter elements in array:");
+for(i=0; i<n ; i++) {
+    scanf("%d", & marks[i]);
+}
+for(i=0; i<n ; i++) {
+    if (marks[i]<35) {
+        printf("%d ", i );
+    }
+}
+return 0;
+
+}
